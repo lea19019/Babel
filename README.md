@@ -1,34 +1,53 @@
-# Overview
+# Babel Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+Babel is meant to be a Web App that will allow people share the songs they like the most. This is currently under development, and we have implenmented this trial.
 
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
+The Web App has been developed using Python and Django as the framework. To run it please download the files, and once they are in your local machine start a virtual enviroment with Python. Once initialized, run the requirements.txt file to get Django in your virtual enviroment and run the server!
 
-{Describe your purpose for writing this software.}
+This are a list of useful commands:
+```shell
+# Get the repositoy on your machine
+git clone <repo URL>
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
+# Create the virtual enviroment on Windows
+py -m venv venv
 
-[Software Demo Video](http://youtube.link.goes.here)
+# Active the Virtual Enviroment
+venv\Scripts\activate.bat
+
+# Run the requirements.txt to get Django in your project
+pip install -r requirements.txt
+
+# Start the server
+python manage.py runserver
+```
+
+[Babel Software Demo Video](http://youtube.link.goes.here)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+The project has currently two web pages, 'Music List' and 'Add Song'.  
+
+Music List, which is the main page, displays a list of songs the user likes. Songs are retrieved from a database in the Babel project. This page and Add Song page are connected trough links.
+
+Add Song, as the name indicates, is the page where you can add the songs you like the most. Music List dynamically displays the songs added in Add Song page.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+* Visual Studio Code
+* Python 3.9.4 64-bit
+* Git / GitHub
+* Django 3.2
+* Python Virtual Enviroment
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Django Official Website](https://docs.djangoproject.com/en/3.0/contents/)
+* [Real Python](https://realpython.com/get-started-with-django-1/)
+* [Microsoft Docs - Django Course](https://docs.microsoft.com/en-us/learn/paths/django-create-data-driven-websites/)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+These are some features and ideas I have in mind to implement in the future:
+* Change the overall design and structure of the website
+* Add a user functionality 
+* Add a share functionality

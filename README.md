@@ -22,7 +22,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-[Babel Software Demo Video](http://youtube.link.goes.here)
+[Babel Software Demo Video](https://youtu.be/zxJKGFmB888)
 
 # Web Pages
 

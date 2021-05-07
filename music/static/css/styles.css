@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.addForm textarea {
+    height: 1rem;
+    width: 10rem;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.listofSongs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: gainsboro;
+    margin-top: 15px;
+}
+
+iframe {
+    width: 80%;
+}
+
+.links:link,
+.links:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.links:hover,
+.links:active {
+    background-color: lightgray;
+    color: white;
+}

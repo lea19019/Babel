@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Music List
+{% endblock %}
+
+{% block content %}
+<h1>Music List</h1>
+<p>Welcome! Take a sit and listen to our songs!</p>
+
+<div>
+    <a class="links" href="{% url 'song_register' %}">Want to add a song?</a>
+</div>
+<div class="listofSongs">
+    {% for song in songs %}
+    <div class="song">
+        <h3>{{song.name}}</h3>
+        <p>{{song.artist}}</p>
+        <iframe width="560" height="315" src="{{song.url}}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+{% endblock %}
